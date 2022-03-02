@@ -3,15 +3,12 @@ import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
 function App() {
 
-  //dev===================
-
   return (
     <Fragment>
-      <Header>
+      <Header/>
         <main>
           <Meals/>
         </main>
-      </Header>
     </Fragment>
   );
 }
