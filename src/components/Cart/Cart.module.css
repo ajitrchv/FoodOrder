@@ -18,6 +18,25 @@
   .actions {
     text-align: right;
   }
+
+   .submitted {
+    text-align: center;
+  }
+  .submitted button {
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+  }
+  .submitted button:hover,
+  .submitted button:active {
+    background-color: #21aa33;
+    border-color: transparent;
+    color: white;
+  }
   
   .actions button {
     font: inherit;
