@@ -1,0 +1,23 @@
+{
+  "meals" : {
+    "m1" : {
+      "description" : "Finest fish and veggies",
+      "name" : "Sushi",
+      "price" : 220
+    },
+"m2":{
+    "name": "Schnitzel",
+    "description": "A german specialty!",
+    "price": 165},
+"m3":{
+  "name": "Barbecue Burger",
+  "description": "American, raw, meaty",
+  "price": 120
+},
+"m4":{
+    "name": "Green Bowl",
+    "description": "Healthy...and green...",
+    "price": 180
+}
+  }
+}
