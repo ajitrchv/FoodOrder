@@ -6,10 +6,29 @@
   }
   
   .MealsLoading{
+    animation: meals-appear 0.5s ease-in;
+    width: 90%;
+    margin: 2rem auto;
+    max-width: 60rem;
     text-align: center;
-    color: brown;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: larger;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
 
+  .MealsError{
+    animation: meals-appear 0.5s ease-in;
+    width: 90%;
+    margin: 2rem auto;
+    max-width: 60rem;
+    text-align: center;
+    color: rgb(163, 0, 0);
+    font-weight: normal;
+    font-size: medium;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  
   .meals ul {
     list-style: none;
     margin: 0;
