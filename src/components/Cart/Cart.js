@@ -84,6 +84,9 @@ const Cart = (props) => {
         <p>Order placed succesfully.</p>
         </div>
         <div className={classes.submitted}>
+          
+        </div>
+        <div className={classes.submitted}>
         <button className={classes.button} onClick={props.onClose}>
           Done
         </button>
