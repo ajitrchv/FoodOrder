@@ -2,12 +2,14 @@ import classes from "./AvailableMeals.module.css";
 import Card from "../UI/Card";
 import MealItem from "./MealItem/MealItem";
 import { useEffect, useState } from "react";
+import { Spinner } from "react-bootstrap";
 
 
 
 const AvailableMeals = () => {
 
   const [meals, setMeals] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);  
 
   useEffect(() => {
     const fetchMeals = async() => {
@@ -25,9 +27,31 @@ const AvailableMeals = () => {
         })
       }
       setMeals(loadedMeals);
+      setIsLoading(false);
     };
     fetchMeals();
   },[]);
+
+  if(isLoading){
+    return <section className={classes.MealsLoading}>
+      <Card>
+        <p>Loading...</p>
+      </Card>
+  </section>
+  };
+  
+  // if(isLoading){
+  //   return (
+  //     <section className={classes.MealsLoading}>
+  //     <Card>
+  //     <div style={{ display: 'block', width: 700, padding: 30 }}>
+  //       <Spinner animation="border" variant="primary" /> <br/>
+  //       <Spinner animation="grow" variant="warning" />
+  //     </div>
+  //     </Card>
+  //     </section>
+  //   );
+  // };
 
 
   const mealslist = meals.map((meal) => (
